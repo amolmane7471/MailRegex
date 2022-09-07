@@ -14,7 +14,7 @@ public class MailValidate {
 		 System.out.println("enter your mail: ");
 	      String mail = sc.next();
 	  
-	      boolean result = Pattern.matches("^[abc]+[.]*[a-zA-Z0-9]+[@]{1}[a-z0-9]+[.]{1}[a-z]+$",mail);  
+	      boolean result = Pattern.matches("^[abc]+[-_+.]{1}+[a-zA-Z]+[@]{1}[a-z0-9]+[.]{1}[a-z]+$",mail);  
 	      
 	      if(result) {
 	         System.out.println("mail is valid");
